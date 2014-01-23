@@ -1,5 +1,9 @@
-<%#@result.each do |result| %>
-    <%#=result.name%>
-<%#end%>
-
+<div class="blog_home">
+    <%@blog.each do |blog| %>
+        <h3><a href="/blog/<%=blog.id%>"><%=blog.name%></a></h3>
+        <h6>BY: <%=blog.author%></h6><br><br>
+    <%end%>
+</div>
+<br>
+<a class="new_blog" href="/new">Create a new Blog Post</a>
 

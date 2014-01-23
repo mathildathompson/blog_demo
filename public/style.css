@@ -1,0 +1,20 @@
+.blog_home h3, .blog_home h6{
+    display:inline;
+}
+
+.blog_home h3{
+    margin-right:10px;
+}
+
+/*.blog_home h3 a{
+    text-decoration:none;
+}*/
+
+.blog_home h6{
+    font-style: italic;
+}
+
+.new_blog{
+    text-decoration:none;
+    color:red;
+}

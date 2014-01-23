@@ -1,0 +1,19 @@
+<h3><%=@blog[:name]%></h3>
+<h5><%=@blog[:content]%></h5>
+<h5><%=@blog[:comments]%></h5>
+<h5><%=@blog[:author]%></h5>
+
+
+<a href="/blogs/<%=@blog.id%>/update">Update Blog</a>
+<!-- <a href="/blogs/<%=@blog.id%>/delete">Delete Blog</a> -->
+
+<p>
+    <form action="/blogs/<%= @blog.id %>/delete" method="post">
+        <input type="hidden" value="delete" name="_method">  
+        <button>delete</button>
+    </form>
+</p>
+
+
+
+

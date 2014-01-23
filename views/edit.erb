@@ -1,0 +1,6 @@
+<% unless @new_blog.valid? %>
+    <p><%= @new_blog.errors.full_messages %></p>
+    <form action="/create" method="post">
+        <%= erb :form %>
+    <button>Submit</button>
+<% end %>
